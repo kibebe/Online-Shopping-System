@@ -1,0 +1,84 @@
+
+body
+{
+margin:0 10px;
+}
+a{font-weight:bold;}
+.slideshow-container,table
+{
+margin:0 auto;
+}
+h1
+{
+text-align:center;
+}
+p
+{
+
+color:#FF0000;
+font-style:italic;
+font-size:16px
+}
+h2
+{
+text-align:center;
+color:#00FF00
+}
+div.header
+{
+background-color:#00f;
+padding:20px 0;
+margin: 0 0 15px 0;
+}
+
+div.header a
+{
+color:#FFFFFF;text-decoration:none;
+}
+div.header a:hover
+{
+color:#999999;
+}
+div.header a:active {color: #FF00CC}
+
+#nairobi-table td,#mombasa-table td,#nakuru-table td,#kisumu-table td,#mlogin-table td,#orders-table td,#add-table td,#update-table td,#delete-table td ,#search_order td, #search-payment td,#search-product td
+{
+padding: 10px;
+}
+.checkout-heading{text-align:center}
+
+#cart
+{
+    display: none;
+}
+#products
+{
+    margin-top:40px;
+}
+.anchor-container
+{
+position:absolute;top:230pt;left:20pt
+}
+.table-container
+{
+position:absolute;top:220pt;left:150pt;right:150pt
+}
+.update-container
+{
+position:absolute;top:200pt;left:150pt;right:150pt
+}
+.total
+{
+    color: #f00;
+    font-weight: bold;
+}
+
+.checkout
+{
+    display:none;
+}
+
+#cart-form
+{
+    display: none;
+}

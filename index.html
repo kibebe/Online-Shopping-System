@@ -1,0 +1,112 @@
+ <!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript" src="jquery.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="js/bootstrap.min.js"></script>
+<link href="project.css" rel="stylesheet" type="text/css">
+<title> Tumaini Stores</title>
+
+
+</head>
+<body  onLoad="imageSlide()">
+<div class="container-fluid">
+	<div class="row">
+	<div class="col-xs-12 .col-md-8">
+		<h1><img src="tumaini.png"/></h1>
+	</div>
+	</div>
+</div>
+<div class="header">
+<table border="0">
+  <tr>
+    <td width="60"><a href="index.html"</a>Home</td>
+    <td width="130"><a href="managerLogin.php">Manager Login</a></td>
+	<td><a href="contact.php">Contact us</a></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</div>
+<p align="left" style="font-weight:bold">Home ></p>
+<table class="slideshow-container">
+<tr>
+<td>
+<img src="super1.jpg" width="450" height="350" name="super" class="super1"/>
+</td>
+</tr>
+</table>
+<div class="anchor-container">
+<div align="center" style=" color:#0033CC;background-color:#00FF00; height:35px;font-weight:bold;font-size:18px" >
+Branches
+</div><br />
+	<a href="nairobi.php"><b>Nairobi Branch ></b></a></br><br/>
+	<a href="mombasa.php"><b>Mombasa Branch ></b></a></br><br/>
+	<a href="kisumu.php"><b>Kisumu Branch ></b></a></br><br/>
+	<a href="nakuru.php"><b>Nakuru Branch ></b></a></br><br/>
+</div>	
+<script type="text/javascript">
+function imageSlide()
+{
+
+setTimeout("imageSlide1()",2000)
+}
+function imageSlide1()
+{
+document.images.super.src="super2.jpg"
+setTimeout("imageSlide2()",2000)
+}
+function imageSlide2()
+{
+document.images.super.src="super3.jpg"
+setTimeout("imageSlide3()",2000)
+}
+function imageSlide3()
+{
+document.images.super.src="super4.jpg"
+setTimeout("imageSlide4()",2000)
+}
+function imageSlide4()
+{
+document.images.super.src="super5.jpg"
+setTimeout("imageSlide5()",2000)
+}
+function imageSlide5()
+{
+document.images.super.src="super6.jpg"
+setTimeout("imageSlide1()",2000)
+}
+$(".anchor-container a").on({
+    mouseenter: function () {
+	var $slide=$(this).html();
+	
+	
+	$('.super1').hide();
+	if($slide===$(".anchor-container a:eq(0)").html()){
+    $('<div style="position:absolute;top:185pt;left:345pt"><img  src="sup1.jpg" width="450" height="350" name="super" class="super"/> <h2 style="position:absolute;top:0pt;left:15pt;color:#FF0000">Nairobi Branch</h2></div>').appendTo(document.body);
+	}
+	else if($slide===$(".anchor-container a:eq(1)").html())
+	{
+$('<div style="position:absolute;top:185pt;left:345pt"><img  src="sup2.jpg" width="450" height="350" name="super" class="super"/> <h2 style="position:absolute;top:0pt;left:15pt;color:#FF0000">Mombasa Branch</h2></div>').appendTo(document.body);
+	}
+		else if($slide===$(".anchor-container a:eq(2)").html())
+	{
+$('<div style="position:absolute;top:185pt;left:345pt"><img  src="sup3.jpg" width="450" height="350" name="super" class="super"/> <h2 style="position:absolute;top:0pt;left:15pt;color:#FF0000">Kisumu Branch</h2></div>').appendTo(document.body);
+	}
+		else if($slide===$(".anchor-container a:eq(3)").html())
+	{
+$('<div style="position:absolute;top:185pt;left:345pt"><img  src="sup4.jpg" width="450" height="350" name="super" class="super"/> <h2 style="position:absolute;top:0pt;left:15pt;color:#FF0000">Nakuru Branch</h2></div>').appendTo(document.body);
+	}
+    },
+    mouseleave: function () {
+    $('.super').hide();
+	$('h2').hide();
+	$('.super1').show();
+    }
+});
+</script>
+</body>
+</html>
+	
+	
